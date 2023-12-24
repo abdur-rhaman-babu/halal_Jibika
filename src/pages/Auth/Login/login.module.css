@@ -1,0 +1,182 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Logincontainer{
+  display:flex;
+  align-items:center;
+  height:100vh;
+  justify-content: center;
+}
+
+.loginPage{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.logo{
+  font-size:2.5rem; 
+}
+
+.emailPassInput{
+  display:flex;
+  align-items:center;
+  gap:5px;
+  height: 55px;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  padding: 0 14px;
+}
+.emailPassInput input {
+ border:none;
+ background-color: #fff;
+ width: 100%;
+}
+
+.loginForm input:focus {
+  outline: none;
+  border-color: #2c3e50;
+}
+
+::placeholder {
+  color: #777;
+  font-size: 1.063rem;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+}
+
+.login {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #34495e;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+  margin-top:5px;
+}
+
+.login:hover {
+  background: #2c3e50;
+}
+
+.loginForm a {
+  text-decoration:none;
+}
+
+.forgot {
+  color: #2c3e50;;
+  font-size: 0.875rem;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+.button {
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.button a {
+  padding:1rem;
+  background: #2c3e50;
+  color: #fff;
+  font-size: 1.063rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.button a:hover {
+  background: #2c3e50;
+}
+
+.LoginHome{
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.LoginHome i{
+    cursor: pointer;
+    font-size:1.7rem;
+}
+
+.LoginHome i:hover{
+    font-size:1.8rem;
+    display:inline-block;
+    color:tomato;
+    transition:.5s;
+}
+
+.emailPassInput{
+  cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+  .loginForm {
+    width: 80%;
+  }
+  .loginForm  input {
+    height: 50px;
+  }
+
+
+  .login {
+    padding: 14px 0;
+    font-size: 1.10rem;
+  }
+
+  .button a {
+    padding: 14px 100%;
+    font-size: 1.10rem;
+  }
+  
+}
+
+
+@media (max-width:768px) {
+  
+  .loginForm  {
+    width: 90%;
+  }
+  .loginForm  input {
+    height: 45px;
+  }
+  .login {
+    padding: 18px 0;
+    font-size: 1.0rem;
+  }
+
+  .button a {
+    padding: 18px 82px;
+    font-size: 1.00rem;
+  }
+} 
+

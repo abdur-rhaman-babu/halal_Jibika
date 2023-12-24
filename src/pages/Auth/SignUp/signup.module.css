@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.signupcontainer{
+  display:flex;
+  align-items:center;
+  height:100vh;
+  justify-content: center;
+}
+
+.Form{
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  padding:1.5rem;
+  border-radius:.5rem;
+}
+.signupformTitle{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:.5rem;
+}
+
+.faTimes:hover{
+  color: #cdcdcd;
+  cursor: pointer;
+}
+
+.signupformName{
+    display:flex;
+    gap:.4rem;
+    margin-bottom:.4rem;
+}
+
+.signupformName input{
+    height:45px;
+    outline:0;
+    border:1px solid #00000044;
+    padding:0 10px;
+}
+
+::placeholder{
+  font-size:.9rem;
+}
+
+.signUpForm{
+  display:flex;
+  flex-direction: column;
+  gap:.5rem;
+}
+
+.signUpBtn {
+  margin-top: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.signUpBtn button{
+  border:none;
+  padding:16px 41%;
+  background: #34495e;
+  color:#fff;
+  font-size:1.0623rem;
+  cursor: pointer;
+}
+
+.signUpBtn button:hover {
+  background: #2c3e50;
+} 
+
+.signUpNewPass input,.signUpConfirmPass input,.signUpEmail input{
+  width:100%;
+  outline:none;
+  border:none;
+}
+
+.signUpNewPass,.signUpConfirmPass,.signUpEmail{
+border:1px solid #bbbbbb;
+padding:.8rem;
+display:flex;
+align-items:center;
+}
+
+.backHome i{
+  font-size:1.7rem;
+}
+
+.backHome i:hover{
+  color:tomato;
+  transition:.5s;
+  cursor: pointer;
+}
+.backHome {
+  display:flex;
+  gap:.3rem;
+}
+
+.signupformTitle h2{
+  margin-right:3rem;
+}
+
+.signUpNewPass{
+  cursor: pointer;
+}
+
+
+
+

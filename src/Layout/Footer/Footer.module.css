@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.footerSection{
+    display: flex;
+    justify-content:space-evenly;
+    background-color:#0a3d62;
+    width:100%;
+    padding:20px 50px;
+
+}
+
+.footerLogo p{
+    color:#fff;
+    width:60%;
+    line-height:1.5rem;
+    margin:1.7rem 0;
+}
+
+.title{
+    display:flex;
+    align-items:center;
+    gap:.8rem;
+    color:#fff;
+}
+
+.title:hover{
+    color:#c7ecee;
+    transition:.3s;
+}
+
+.title h1 span{
+    color:#0fbcf9;
+    font-size: 3rem;
+}
+
+.logo{
+    font-size:40px;
+    color:#fff;
+}
+
+sup{
+    font-size:15px;
+    font-weight:500;
+}
+
+.footerMenu a{
+    display:block;
+    color:#fff;
+    padding:.5rem 0;
+}
+
+.footerMenu a:hover{
+    text-decoration:underline;
+    transition:.5s;
+}
+
+.footerMenu h3{
+    display:block;
+    color:#fff;
+    padding:.5rem 0;
+}
+
+.footerIcon{
+    color:#fff;
+    display:flex;
+    gap:10px;
+    font-size:1.5rem;
+}
+
+.footerBottom{
+    display:flex;
+    justify-content:space-between;
+    background-color:#1e272e;
+    color:#fff;
+    padding:1.5rem 3rem;
+}

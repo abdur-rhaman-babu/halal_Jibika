@@ -1,0 +1,237 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+}
+
+.navMenu{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    width:100%;
+    background-color:#0a3d62;
+    color:#fff;
+    padding:15px 50px;
+    position:fixed;
+}
+
+.navMenu button{
+    background:none;
+    border:0;
+    color:#fff;
+    font-size:1.2rem;
+}
+
+.title{
+    display:flex;
+    align-items:center;
+    gap:.8rem;
+    color:#fff;
+}
+
+.title:hover{
+    color:#c7ecee;
+    transition:.3s;
+}
+
+.title h1 span{
+    color:#0fbcf9;
+    font-size: 3rem;
+}
+
+.logo{
+    font-size:40px;
+    color:#fff;
+}
+
+.reponsiveNav{
+    display:none;
+    cursor: pointer;
+}
+
+sup{
+    font-size:15px;
+    font-weight:500;
+}
+
+.searchBar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:#fff;
+    border:1px solid #000;
+    width:40%;
+    border-radius:5px;
+    padding:8px 7px;
+}
+
+.searchBar Input{
+    border:none;
+    outline:0;
+    width:97%;
+}
+
+.searhIcon{
+    font-size:1.2rem;
+    color:#000;
+    cursor: pointer;
+}
+
+.mainMenu{
+display:flex;
+align-items: center;
+}
+
+.mainMenu a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:1.0623rem;
+    font-weight:600;
+    position:relative;
+}
+
+
+.mainMenu a::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height:2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+
+  /* Expand the underline on hover */ 
+.mainMenu a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+
+.loginIcon{
+    font-size:2.5rem;
+    color:#fff;
+    position:absolute;
+    top:1.5rem;
+    right:1rem;
+}
+
+.loginIcon:hover{
+   color:#60a3bc;
+   transition:.3s;
+}
+
+.SignOut{
+    margin-left:200px;
+}
+
+.loginIcon a::after {
+    display: none;
+ }
+
+ .userImg img{
+    width:2.4rem;
+    border-radius:50%;
+    position:absolute;
+    top:1.5rem;
+    right:1rem;
+ }
+
+ .SignOut{
+    text-decoration:none;
+    color:#fff;
+    padding:.3rem .5rem;
+    position:absolute;
+    top:1.8 rem;
+    right:3.7rem;
+    font-weight:700;
+    border:1px solid #fff;
+ }
+
+  @media (max-width: 992px) {
+
+    .navMenu{
+        padding:.8rem 1rem;
+    }
+
+    .reponsiveNav{
+        display:block;
+    }
+    
+    .title{
+        gap:.2rem;
+        margin-right:10px;
+    }
+    
+    .title h1 span{
+        font-size: 1.3rem;
+    }
+
+    .title h1{
+        font-size: .7rem;
+    }
+
+    .title h1 sup{
+        font-size: .5rem;
+    }
+    
+    .logo{
+        font-size:1.8rem;
+    }
+ 
+    .searchBar{
+        width:60%;
+        padding:5px 5px;
+    }
+    
+    .mainMenu{
+        display:block;
+        position: absolute;
+        background-color:#2C3A47;
+        top:3.7rem;
+        right:-100%;
+        text-align:center;
+        min-height:100vh;
+        padding:1.2rem 0;
+    }
+
+    .mainMenuResponsive{
+        right:0;
+        transition:.5s;
+        width:70%;
+    }
+
+    .mainMenuResponsive a{
+        display:block;
+        font-size:.8rem;
+        margin-bottom:10px;
+    } 
+
+    .mainMenu a::after {
+        display:none;
+      }  
+
+    .loginIcon{
+    font-size:2rem;
+    color:#fff;
+    display:none;
+    } 
+ 
+.userImg img{
+    width:1.7rem;
+    border-radius:50%;
+    position:absolute;
+    top:.7rem;
+    right:.3rem;
+ }
+ .SignOut{
+    display:none;
+ }
+  }
+
+
+
+
