@@ -55,7 +55,7 @@ const Footer = () => {
          </div>
 
         <div className={styles.footerBottom}>
-            <p>Copyright © 2023 <span>P</span>roject <sup>bd</sup></p>
+            <p>Copyright © 2023 Halal Jibika</p>
             <p>All Rights Reserved</p>
         </div>
         </section>

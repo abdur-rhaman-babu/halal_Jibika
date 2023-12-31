@@ -1,4 +1,4 @@
-import HomeImg from './HomeImg/Job-vs-Business-What-is-Better-.jpg';
+import HomeImg from './HomeImg/banner.png';
 import styles from "./Home.module.css";
 import { NavLink } from 'react-router-dom';
 const Home = () => {

@@ -26,7 +26,7 @@ const navBarhandler =()=>{
     return (
             <nav className={styles.navMenu}>
             <NavLink to='/'><div className={styles.title}>
-            <MdHomeWork className={styles.logo}/>
+            <MdHomeWork className={styles.logo} style={{color:'#fff'}}/>
             <h1><span>H</span>ALAL JIBIKA</h1> 
             </div> </NavLink>
 

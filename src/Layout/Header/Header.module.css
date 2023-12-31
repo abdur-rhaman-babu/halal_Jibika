@@ -1,20 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Poppins:wght@600&family=Roboto+Condensed:ital,wght@1,500&display=swap');
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    text-decoration:none;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
-}
 
 .navMenu{
     display:flex;
     justify-content:space-between;
     align-items: center;
     width:100%;
-    background-color:#fe95c0;
+    background-color: #003d60;
     color:#fff;
     padding:.5% 3%;
     position:fixed;
@@ -42,16 +32,16 @@
 .title h1{
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
+    color:#fff;
 }
 
 .title h1 span{
-    color:#2C3A47;
+    color:#3ce907;
     font-size: 3rem;
 }
 
 .logo{
     font-size:40px;
-    color:#fff;
 }
 
 .reponsiveNav{
@@ -79,7 +69,7 @@
 
 .searhIcon{
     font-size:1.2rem;
-    color:#000;
+    color:#003d60;
     cursor: pointer;
 }
 

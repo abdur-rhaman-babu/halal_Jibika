@@ -1,26 +1,15 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto+Condensed:ital,wght@1,500&display=swap');
-*{
-    margin: 0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
 .banner_area{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    width:1200px;
-    margin:0 auto;
     background:url(./HomeImg/bg.png);
 }
 
 .banner_img img{
     height:22rem;
     width:35rem;
-    border-radius:.3rem;
+    border-radius:.8rem;
 }
 
 .banner_text{
@@ -34,11 +23,11 @@
 
 .banner_text h3{
     font-family: 'Roboto Condensed', sans-serif;
-    color:#48753a;
+    color:#3ce907;
 }
 
 .banner_text button{
-    background-color: #ff96c1;
+    background-color: #003d60;
     border:none;
     padding:.8rem 1rem;
     border-radius:.3rem;
@@ -48,7 +37,7 @@
 }
 
 .banner_text button:hover{
-    background-color: #F75E98;
+    background-color: #03283d;
     transition:.3s;
 }
 
