@@ -1,20 +1,23 @@
-
-.jobsContent{
-display:flex;
-gap:10px;
-max-width: 1200px;
-margin:0 auto;
-justify-content: space-between;
+*{
+    list-style:none;
 }
 
-
+.mainContent{
+   display: grid;
+   grid-template-columns:repeat(3,1fr);
+}
+.container{
+display:flex;
+gap:10px;
+justify-content: space-between;
+}
 
 .jobCard{
     padding:10px;
     background-color:#ecf0f1;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin:5px;
-    width:360px;
+    width:390px;
 }
 
 .flex{
@@ -32,7 +35,7 @@ justify-content: space-between;
     transition: .5s;
 }
 
-.jobCard button{
+.jobCard button,.jobDescription button,.ApplyNow{
     background-color:#303952;
     color:#fff;
     padding:5px;
@@ -50,7 +53,6 @@ justify-content: space-between;
     padding:10px;
     background-color:#ecf0f1;
     margin:5px;
-    width:811px;
     padding:.6rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border-radius:5px;
@@ -79,6 +81,9 @@ justify-content: space-between;
 
 .jobDescription button{
     border:none;
+    margin-top:0;
+    font-size:1rem;
+    font-weight:600;
 }
 
 .jobTitle {
@@ -90,6 +95,12 @@ justify-content: space-between;
 .jobTitle img{
     width:1.8rem;
     height:1.8rem;
+}
+
+.ApplyNow{
+    width:100%;
+    text-align:center;
+    padding:.8rem 0;
 }
 
 
