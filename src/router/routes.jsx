@@ -6,10 +6,10 @@ import About from "../pages/About/About";
 import Login from "../pages/Auth/Login/Login";
 import Signup from "../pages/Auth/SignUp/Signup";
 import NotFound from "../pages/NotFound/NotFound";
-import Users from "../pages/Users/Users";
-import UserDetails from "../pages/Users/userDetails";
 import ErrorPage from "../Components/ErrorPage/ErrorPage";
-import PrivateRoutes from "./PrivateRoutes";
+import Jobs from "../pages/Jobs/Jobs";
+import JobDetails from "../pages/Jobs/JobDetails";
+import Favourites from "../pages/Favourite/Favourites";
 
 
 const routes = createBrowserRouter(
@@ -31,17 +31,20 @@ const routes = createBrowserRouter(
                     element:<Contact/>
                 },
                 {
-                    path:'/users',
-                    element:<PrivateRoutes><Users/></PrivateRoutes>,
-                    loader:()=>fetch('https://jsonplaceholder.typicode.com/users'),
+                    path:'/jobs',
+                    element:<Jobs/>,
+                    loader:()=>fetch('http://localhost:9000/jobs'),
                     errorElement:<ErrorPage/>
                 },
                 {
-                    path:"/users/:userid",
-                    element:<UserDetails/>,
-                    loader:({params})=>fetch(`https://jsonplaceholder.typicode.com/users/${params.userid}`)
+                    path:"/jobs/:jobid",
+                    element:<JobDetails/>,
+                    loader:({params})=>fetch(`http://localhost:9000/jobs/${params.jobid}`)
                 },
-                
+                {
+                    path:'/favourite',
+                    element:<Favourites/>
+                },
             ]
         },
         {

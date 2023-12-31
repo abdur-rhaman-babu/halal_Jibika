@@ -6,12 +6,11 @@
 }
 
 .footerSection{
-    display: flex;
-    justify-content:space-evenly;
-    background-color:#0a3d62;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    background-color:#fe95c0;
     width:100%;
     padding:20px 50px;
-
 }
 
 .footerLogo p{
@@ -43,10 +42,6 @@
     color:#fff;
 }
 
-sup{
-    font-size:15px;
-    font-weight:500;
-}
 
 .footerMenu a{
     display:block;
@@ -75,7 +70,14 @@ sup{
 .footerBottom{
     display:flex;
     justify-content:space-between;
-    background-color:#1e272e;
+    background-color:#0a3d62;
     color:#fff;
     padding:1.5rem 3rem;
+}
+
+@media (max-width: 992px) {
+    .footerSection{
+        grid-template-columns:repeat(1,1fr);
+        gap:20px;
+    }
 }

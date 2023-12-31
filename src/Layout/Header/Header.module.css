@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Poppins:wght@600&family=Roboto+Condensed:ital,wght@1,500&display=swap');
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
     text-decoration:none;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .navMenu{
@@ -10,9 +14,9 @@
     justify-content:space-between;
     align-items: center;
     width:100%;
-    background-color:#0a3d62;
+    background-color:#fe95c0;
     color:#fff;
-    padding:15px 50px;
+    padding:.5% 3%;
     position:fixed;
 }
 
@@ -35,8 +39,13 @@
     transition:.3s;
 }
 
+.title h1{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
 .title h1 span{
-    color:#0fbcf9;
+    color:#2C3A47;
     font-size: 3rem;
 }
 
@@ -50,20 +59,16 @@
     cursor: pointer;
 }
 
-sup{
-    font-size:15px;
-    font-weight:500;
-}
 
 .searchBar{
     display:flex;
     align-items:center;
     justify-content:space-between;
     background-color:#fff;
-    border:1px solid #000;
-    width:40%;
+    width:35%;
     border-radius:5px;
     padding:8px 7px;
+    margin-left:5px;
 }
 
 .searchBar Input{
@@ -90,6 +95,7 @@ align-items: center;
     font-size:1.0623rem;
     font-weight:600;
     position:relative;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -115,17 +121,13 @@ align-items: center;
     font-size:2.5rem;
     color:#fff;
     position:absolute;
-    top:1.5rem;
+    top:1rem;
     right:1rem;
 }
 
-.loginIcon:hover{
-   color:#60a3bc;
-   transition:.3s;
-}
 
 .SignOut{
-    margin-left:200px;
+    margin-right:8rem;
 }
 
 .loginIcon a::after {
@@ -136,19 +138,22 @@ align-items: center;
     width:2.4rem;
     border-radius:50%;
     position:absolute;
-    top:1.5rem;
-    right:1rem;
+    top:1rem;
+    right:.4rem;
  }
 
  .SignOut{
     text-decoration:none;
     color:#fff;
     padding:.3rem .5rem;
-    position:absolute;
-    top:1.8 rem;
-    right:3.7rem;
     font-weight:700;
     border:1px solid #fff;
+    text-align:center;
+ }
+
+ .SignOut:hover{
+    transition:.3s;
+    background-color:#f587b5;
  }
 
   @media (max-width: 992px) {
@@ -159,6 +164,7 @@ align-items: center;
 
     .reponsiveNav{
         display:block;
+       margin-left:.3rem;
     }
     
     .title{
@@ -220,18 +226,35 @@ align-items: center;
     display:none;
     } 
  
-.userImg img{
+    .userImg img{
+    display:none;
     width:1.7rem;
     border-radius:50%;
     position:absolute;
     top:.7rem;
     right:.3rem;
  }
+
  .SignOut{
-    display:none;
+    font-size:.7rem;
+    width:14rem;
+    text-align:center;
+    display: none;
  }
-  }
+ .Login{
+    color:#fff;
+    font-size:1rem;
+    padding:1px 3px;
+    border:1px solid #fff;
+    margin-left:.3rem;
+    margin-bottom:.3rem;
+ }
+}
 
-
+@media (max-width:768px) {
+    .searchBar{
+        width:58%;
+    }
+}
 
 

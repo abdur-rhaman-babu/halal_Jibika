@@ -1,11 +1,28 @@
-
+import HomeImg from './HomeImg/Job-vs-Business-What-is-Better-.jpg';
+import styles from "./Home.module.css";
+import { NavLink } from 'react-router-dom';
 const Home = () => {
-    return (
-        <div>
-    <h1>Balance Calulator</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, omnis error! Nihil rerum vero deleniti molestias commodi est soluta officiis ad veritatis architecto, illum accusantium alias laborum, a vel pariatur, placeat eaque voluptatibus perferendis esse. Illo eos accusamus culpa, officia, exercitationem accusantium expedita ratione a est cumque ipsum eius? Doloremque ipsum laborum officiis deserunt illo tempora blanditiis quae ratione delectus amet, asperiores voluptates quod, exercitationem totam odio nulla est minus sequi dolore magnam alias ex! Adipisci cumque, ad unde tempore excepturi recusandae earum repellendus natus voluptates, enim aut vel consectetur hic quos iure. Adipisci tempora expedita debitis iure facilis natus quia velit, a aliquam sit minus dignissimos id pariatur aliquid voluptate fugiat. Obcaecati beatae iste et reprehenderit perspiciatis illo sed, facilis a fugit reiciendis tenetur sit neque tempora. Blanditiis aut explicabo architecto minima libero deserunt aliquam ut similique vitae sint ipsam odio quia sapiente commodi, placeat veritatis maxime voluptates dolore. Magnam quia a iste, maxime eligendi accusantium alias sunt. Eum maxime ipsam, esse sint ipsum fuga amet aliquid, possimus ipsa expedita repellat, mollitia rem cupiditate molestias modi? Debitis harum quae aliquid qui ullam maiores distinctio quos! In odio impedit laboriosam perferendis aliquid eligendi excepturi quidem corrupti? Eius, a asperiores officia repellendus maiores, veniam earum, accusantium obcaecati illo consequuntur quibusdam! Recusandae ipsum, unde facere itaque illo obcaecati fugiat, ad provident totam modi quisquam blanditiis facilis numquam? Expedita, incidunt debitis tempora consequuntur quaerat nihil ipsum! Atque quaerat repellendus, laudantium optio nostrum, voluptatum non, suscipit magni est deleniti illum. Eligendi officiis sapiente commodi illo cumque voluptatum aperiam iure dolorum? Suscipit minus quia praesentium facere fugit cum necessitatibus ad sit ab vitae iure soluta odit blanditiis quod illo at hic obcaecati, consequatur provident quibusdam tenetur, laudantium dolore nisi? Sint, numquam. Cumque enim accusamus architecto sint, molestias ad earum aut placeat quasi iste dolorum omnis amet quas aperiam iusto animi, incidunt quibusdam voluptatibus quisquam repudiandae impedit obcaecati? Nostrum numquam non mollitia commodi, alias dolorum sapiente saepe quisquam assumenda nemo ut doloremque possimus esse exercitationem rem sunt fuga consectetur odit tenetur. Facere perspiciatis enim, voluptatibus impedit dicta explicabo rerum error sapiente molestiae doloribus? Ad aspernatur animi esse obcaecati corporis iure, ea adipisci omnis ipsa delectus nulla repellat nobis necessitatibus officia architecto asperiores suscipit pariatur quidem quibusdam cum officiis odio. Vel minima culpa minus provident dolorem. Incidunt assumenda, quae cum ratione natus recusandae deleniti amet ex laborum architecto, enim vitae? Voluptate doloribus laboriosam nemo, vero perferendis molestiae tenetur dignissimos hic a, labore laborum voluptates suscipit magnam dolor ipsum facilis eaque sapiente ea excepturi neque reiciendis quam. Molestiae delectus aliquid voluptatum dolor sint saepe aliquam eius laborum deserunt architecto, ex laudantium unde illo, ea tenetur quibusdam nostrum corrupti. Atque laborum, ea modi reprehenderit, tempore, fugiat voluptates neque nam omnis dolorem natus accusantium voluptatem distinctio quas voluptatum iste vitae ad obcaecati vero! Amet ipsum molestiae ipsa rerum repellat, libero repudiandae recusandae velit labore ea asperiores praesentium commodi inventore non tempore, possimus esse. Maxime, reiciendis numquam a accusantium vero eveniet placeat vel minus sequi incidunt magni veniam esse aperiam recusandae?</p>
+  return (
+    <section>
+      <div className={styles.banner_area}>
+        <div className={styles.banner_text}>
+          <h3>Halal Job Network</h3>
+          <h1>Find Your Prefered Job</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation.
+          </p>
+          <NavLink to='/login'>
+             <p className={styles.Login}></p> <button>Explore Now</button>
+          </NavLink>
         </div>
-    );
+        <div className={styles.banner_img}>
+          <img src= {HomeImg} alt="" />
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Home;

@@ -1,11 +1,11 @@
 
 import { NavLink } from "react-router-dom";
 import styles from "./Footer.module.css";
-import { PiDropboxLogoFill } from "react-icons/pi";
 import { RiFacebookBoxLine } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa6";
 import { CiLinkedin } from "react-icons/ci";
 import { FaXTwitter } from "react-icons/fa6";
+import { MdHomeWork } from "react-icons/md";
 const Footer = () => {
     return (
         <section>
@@ -14,8 +14,8 @@ const Footer = () => {
             <div className= {styles.footerLogo}>
             <div>
             <NavLink to='/'><div className={styles.title}>
-            <PiDropboxLogoFill className={styles.logo} />
-            <h1><span>P</span>ROJECT<sup>BD</sup></h1> 
+            <MdHomeWork className={styles.logo} />
+            <h1><span>H</span>HALAL JIBIKA</h1> 
             </div> </NavLink>
             </div>
 
@@ -41,10 +41,8 @@ const Footer = () => {
            <div className={styles.footerMenu}>
             <h3>Company</h3>
             <NavLink to='/carrers'> Careers </NavLink>
-            <NavLink to='/press'> Press </NavLink>
             <NavLink to='/pricing'> Pricing</NavLink>
             <NavLink to='/entertainment'> Entertainment </NavLink>
-            <NavLink to='/requier'>Require</NavLink>
            </div>
 
            <div className={styles.footerMenu}>
@@ -52,8 +50,6 @@ const Footer = () => {
             <NavLink to='/privacy'> Privacy Policy </NavLink>
             <NavLink to='/terms&condition'> Terms & Condition </NavLink>
             <NavLink to='/faq'> FAQ</NavLink>
-            <NavLink to='/signup'> Sign Up </NavLink>
-            <NavLink to='/login'>Login</NavLink>
            </div>
 
          </div>

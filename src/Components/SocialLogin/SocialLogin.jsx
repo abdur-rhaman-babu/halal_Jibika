@@ -3,6 +3,9 @@ import { useSignInWithGoogle,useSignInWithGithub } from "react-firebase-hooks/au
 import auth from "../../firebase/firebase.init";
 import Loading from './../Loading/Loading';
 import { toast } from "react-toastify";
+import styles from "./SocialLogin.module.css";
+import { FcGoogle } from "react-icons/fc";
+import { FaGithub } from "react-icons/fa6";
 
 const SocialLogin = () => {
     const [signInWithGoogle, googleuser, googleLoading, googleError] = useSignInWithGoogle(auth);
@@ -26,10 +29,11 @@ const SocialLogin = () => {
     }
 
     return (
-        <div>
+        <div className={styles.socialLogin}>
             {errorElement}
-            <button onClick={()=>signInWithGoogle()}>continue with google</button>
-            <button onClick={()=>signInWithGithub()}>continue with githab</button>
+            <div className={styles.googleBtn}><FcGoogle /><button onClick={()=>signInWithGoogle()}>continue with google</button> </div>
+            <div className={styles.githubBtn}><FaGithub /><button onClick={()=>signInWithGithub()}>continue with github</button></div>
+            
         </div>
     );
 };

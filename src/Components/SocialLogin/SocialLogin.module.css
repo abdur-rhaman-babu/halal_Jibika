@@ -1,0 +1,40 @@
+/* *{
+  margin: 0;
+  padding:0;
+  box-sizing:border-box;
+} */
+.socialLogin{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  color:#fff;
+}
+
+.googleBtn,.githubBtn{
+    border: 1px solid #F75E98;
+    padding: 0.3rem .3rem;
+    display:flex;
+    align-items:center;
+    font-size:1.5rem;
+}
+
+.socialLogin button{
+   border:none;
+   background-color:#fff;
+   width:100%;
+   font-weight:700;
+   cursor: pointer;
+}
+
+.githubBtn{
+  background-color:#000;
+}
+
+.githubBtn button{
+  background-color:#000;
+  color:#fff;
+}
+
+
+
+
