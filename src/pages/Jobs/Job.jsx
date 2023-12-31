@@ -8,12 +8,9 @@ import { MdWorkHistory } from "react-icons/md";
 import { MdOutlineDateRange } from "react-icons/md";
 import { Link } from 'react-router-dom';
 const Job = ({job}) => {
-    const {id,title,companyName,position,location,exprience,eduq,date} = job;
-    job.location='Any Where In Bangladesh'
-    job.exprience = 'about 2 years'
-    job.eduq = "Master's Degree"
-    job.date = '25-12-2023'
+    const {id,title,companyName,position,location,experience,educationQualification,deadline,logo} = job;
     console.log(job);
+
     const [isShow,setIsShow]=useState(false)
 
     return (
@@ -27,13 +24,12 @@ const Job = ({job}) => {
                 <p>{position}</p>
 
                 <div className={styles.jobsDetails}>
-                {/* <Link to={`/jobs/${id}`}> */}
                 <button onClick={()=>setIsShow(!isShow)}>
                 {
                     isShow ? 'hide' : "Show Details"
                 }
                 </button>
-                {/* </Link> */}
+
                 </div>
                 </div>
                 </div>
@@ -42,25 +38,28 @@ const Job = ({job}) => {
                 {
                     isShow && 
                     <div className={styles.jobDetails}>
+                        <div className={styles.flex}>
                         <h3>{title}</h3>
+                        <img src={logo} alt="" />
+                        </div>
                         <h3>{companyName}</h3>
 
                         <div className={styles.flex}><MdLocationPin />
                         <p>{location}</p> </div>
 
                         <div className={styles.flex}><HiAcademicCap />
-                        <p>{eduq}</p></div>
+                        <p>{educationQualification}</p></div>
 
                         <div className={styles.exp_date}>
                         <div className={styles.flex}><MdWorkHistory />
-                        <p>{exprience}</p></div>
+                        <p>{experience}</p></div>
                        
                         <div className={styles.flex}><MdOutlineDateRange />
-                        <p>{date}</p></div>
+                        <p>{deadline}</p></div>
                         </div>
                         
-                        <div>
-                        <Link to={`/jobs/${id}`}>Description</Link> 
+                        <div className={styles.jobDescription}>
+                        <Link to={`/jobs/${id}`}><button>Description</button></Link> 
                         </div>
                     </div>
                 }

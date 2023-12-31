@@ -5,13 +5,14 @@ align-items:center;
 gap:10px;
 max-width: 1200px;
 margin:0 auto;
+justify-content: space-between;
 }
 .jobCard{
     padding:10px;
     background-color:#ecf0f1;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin:5px;
-    width:300px;
+    width:360px;
 }
 
 .flex{
@@ -30,12 +31,13 @@ margin:0 auto;
 }
 
 .jobCard button{
-    background-color:#000;
+    background-color:#303952;
     color:#fff;
     padding:5px;
-    border-radius:5px;
+    border-radius:2px;
     margin-top:10px;
     cursor: pointer;
+    border:none;
 }
 
 .jobCard i{
@@ -44,10 +46,10 @@ margin:0 auto;
 
 .jobDetails{
     padding:10px;
-    background-color:#fff;
+    background-color:#ecf0f1;
     margin:5px;
-    width:800px;
-    padding:1.4rem;
+    width:811px;
+    padding:1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border-radius:5px;
 }
@@ -55,6 +57,26 @@ margin:0 auto;
 .jobDetails p{
     font-weight:700;
     color:#303952;
+}
+
+.jobDetails:hover{
+    background-color:#fff;
+    transition:.5s;
+}
+
+.jobDescription{
+    text-align: center;
+    margin-top:5px;
+    background-color: #303952;
+    padding:.3rem 0;
+}
+
+.jobDescription a{
+    color:#fff;
+}
+
+.jobDescription button{
+    border:none;
 }
 
 
