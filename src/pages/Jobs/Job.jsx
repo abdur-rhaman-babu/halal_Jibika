@@ -15,9 +15,14 @@ const Job = ({job}) => {
 
     return (
             <>
+            <div className={styles.container}>
+         
                 <div className={styles.jobsContent}>
+
+                <div className={styles.jobCards}>
                 <div  className={styles.jobCard}>
                 <i><MdHomeWork/></i>
+
                 <div>
                 <h3>{title}</h3>
                 <h3>{companyName}</h3>
@@ -29,16 +34,18 @@ const Job = ({job}) => {
                     isShow ? 'hide' : "Show Details"
                 }
                 </button>
+                </div>
+
+                </div>
 
                 </div>
                 </div>
-                </div>
-
-                <div>
+               
+            <div>
                 {
                     isShow && 
                     <div className={styles.jobDetails}>
-                        <div className={styles.flex}>
+                        <div className={styles.jobTitle}>
                         <h3>{title}</h3>
                         <img src={logo} alt="" />
                         </div>
@@ -64,7 +71,9 @@ const Job = ({job}) => {
                     </div>
                 }
                 </div>
-                </div>
+            </div>
+                       
+            </div>
             </>
           
     );

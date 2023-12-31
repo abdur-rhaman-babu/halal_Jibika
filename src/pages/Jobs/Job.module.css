@@ -1,12 +1,14 @@
 
 .jobsContent{
 display:flex;
-align-items:center;
 gap:10px;
 max-width: 1200px;
 margin:0 auto;
 justify-content: space-between;
 }
+
+
+
 .jobCard{
     padding:10px;
     background-color:#ecf0f1;
@@ -49,7 +51,7 @@ justify-content: space-between;
     background-color:#ecf0f1;
     margin:5px;
     width:811px;
-    padding:1rem;
+    padding:.6rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     border-radius:5px;
 }
@@ -77,6 +79,17 @@ justify-content: space-between;
 
 .jobDescription button{
     border:none;
+}
+
+.jobTitle {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.jobTitle img{
+    width:1.8rem;
+    height:1.8rem;
 }
 
 
