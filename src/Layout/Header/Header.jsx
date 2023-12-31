@@ -40,20 +40,17 @@ const navBarhandler =()=>{
             <NavLink to='/contact'> Contact </NavLink>
             <NavLink to='/jobs'> Jobs</NavLink>
             <NavLink to='/favourite'> Favourite </NavLink>
+            {user? <Link className={styles.SignOut} onClick={logout}>Sign Out</Link> : <NavLink to='/login'>
+            {isChecked? <p className={styles.Login}>Login</p> :<IoMdContact className={styles.loginIcon} />}</NavLink>}
+            <div className={styles.userImg}>
+            <span>{user?.photoURL? <img src={user?.photoURL}></img>:''}</span> 
+            </div>
             </div> 
 
           
             <button onClick={navBarhandler} className={styles.reponsiveNav}>
             {<i>{ isChecked ?<FaRegTimesCircle /> :<FaBars /> }</i>} 
             </button>
-            
-            {user? <Link className={styles.SignOut} onClick={logout}>Sign Out</Link> : <NavLink to='/login'>
-            {isChecked? <p className={styles.Login}>Login</p> :<IoMdContact className={styles.loginIcon} />}</NavLink>}
-          
-            
-            <div className={styles.userImg}>
-            <span>{user?.photoURL? <img src={user?.photoURL}></img>:""}</span> 
-            </div>
         </nav>
     );
 };

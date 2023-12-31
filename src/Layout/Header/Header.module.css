@@ -108,11 +108,11 @@ align-items: center;
 
 
 .loginIcon{
-    font-size:2.5rem;
+    font-size:2.3rem;
     color:#fff;
     position:absolute;
-    top:1rem;
-    right:1rem;
+    top: -20px;
+    right:-35px;
 }
 
 
@@ -143,7 +143,11 @@ align-items: center;
 
  .SignOut:hover{
     transition:.3s;
-    background-color:#f587b5;
+    background-color:#0e1d2c;
+ }
+
+ .SignOut:hover::after {
+    display: none;
  }
 
   @media (max-width: 992px) {
@@ -168,10 +172,6 @@ align-items: center;
 
     .title h1{
         font-size: .7rem;
-    }
-
-    .title h1 sup{
-        font-size: .5rem;
     }
     
     .logo{
@@ -217,27 +217,28 @@ align-items: center;
     } 
  
     .userImg img{
-    display:none;
-    width:1.7rem;
-    border-radius:50%;
+    width:3rem;
+    border-radius:10%;
     position:absolute;
-    top:.7rem;
-    right:.3rem;
+    top:10rem;
+    right:6.5rem;
+    margin-top:.5rem;
  }
 
  .SignOut{
-    font-size:.7rem;
-    width:14rem;
-    text-align:center;
     display: none;
+    border:none;
+    width:91.2%;
+    text-align:center;
  }
+
+
  .Login{
     color:#fff;
-    font-size:1rem;
-    padding:1px 3px;
-    border:1px solid #fff;
-    margin-left:.3rem;
-    margin-bottom:.3rem;
+ }
+
+ .Login:hover{
+    color:#f587b5;
  }
 }
 

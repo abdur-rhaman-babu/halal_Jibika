@@ -46,3 +46,36 @@
     font-size:1rem;
 }
 
+@media (max-width: 992px) {
+    .banner_area{
+        display:flex;
+        flex-direction: column-reverse;
+        text-align:center;
+        gap:2rem;
+    }
+}
+
+@media (max-width:768px) {
+.banner_img img{
+    height:100%;
+    width:100%;
+    border-radius:.2rem;
+}
+
+.banner_text{
+    width:20rem;
+}
+
+
+.banner_text h1{
+   font-size:1.8rem;
+   margin-top:.8rem;
+}
+
+
+.banner_text button{
+    padding:.5rem .8rem;
+    font-size:1rem;
+}
+
+}

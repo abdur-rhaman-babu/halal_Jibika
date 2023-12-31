@@ -40,7 +40,7 @@
   align-items:center;
   gap:5px;
   width: 100%;
-  border: 1px solid #F75E98;
+  border: 1px solid #003d60;
   font-size: 1rem;
   padding: .7rem .3rem;
 }
@@ -73,14 +73,14 @@
  padding: .5rem .3rem;
  width:100%;
  color:#fff;
- background-color: #F75E98;
+ background-color:#003d60;
  cursor: pointer;
  font-size:1.2rem;
 }
 
 
 .login:hover {
-  background-color: #e2538f;
+  background-color:#023250;
   transition: .5s;
 }
 
@@ -104,14 +104,14 @@
 }
 
 .createNew{
-  background-color: #F75E98;
+  background-color:#003d60;
   transition: 0.2s ease;
   padding: .6rem 1rem;
   cursor: pointer;
 }
 
 .createNew:hover {
-  background-color: #e2538f;
+  background-color:#023250;
   transition:.3s;
 }
 
@@ -137,7 +137,7 @@
 .LoginHome i:hover{
     font-size:1.8rem;
     display:inline-block;
-    color:#F75E98;
+    color:#003d60;
     transition:.5s;
 }
 

@@ -48,11 +48,9 @@ const JobDetails = () => {
               </div>
             </div>
 
-            <div className={styles.jobDescription}>
-            <button onClick={() => setShowDetails(!showDetails)}>
+            <button className={styles.jobDescription} onClick={() => setShowDetails(!showDetails)}>
                   {showDetails ? "Hide Details" : "Description"}
                 </button>
-            </div>
 
            {
             showDetails && <div> <div className={styles.applicationRequirements}>

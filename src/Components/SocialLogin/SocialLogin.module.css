@@ -1,8 +1,4 @@
-/* *{
-  margin: 0;
-  padding:0;
-  box-sizing:border-box;
-} */
+
 .socialLogin{
   display:flex;
   flex-direction:column;
@@ -11,7 +7,7 @@
 }
 
 .googleBtn,.githubBtn{
-    border: 1px solid #F75E98;
+    border: 1px solid #003d60;
     padding: 0.3rem .3rem;
     display:flex;
     align-items:center;

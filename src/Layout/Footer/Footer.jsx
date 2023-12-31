@@ -12,14 +12,14 @@ const Footer = () => {
            <div className={styles.footerSection}>
             
             <div className= {styles.footerLogo}>
-            <div>
+            <div className={styles.footer}>
             <NavLink to='/'><div className={styles.title}>
             <MdHomeWork className={styles.logo} />
             <h1><span>H</span>HALAL JIBIKA</h1> 
             </div> </NavLink>
             </div>
 
-            <p>This is a big one and i consider it one of the most important things for a business.</p>
+            <p>If You Want to Jannat. Your Income Should be Halal.So Apply soon</p>
 
             <div className={styles.footerIcon}>
             <RiFacebookBoxLine />

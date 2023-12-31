@@ -9,6 +9,7 @@ const Job = ({ job }) => {
     title,
     companyName,
     position,
+    logo,
   } = job;
 //   console.log(job);
  
@@ -18,17 +19,15 @@ const Job = ({ job }) => {
       <div className={styles.jobsContent}>
         <div className={styles.jobCards}>
           <div className={styles.jobCard}>
-            <i>
-              <MdHomeWork />
-            </i>
-
+             <div className={styles.jobTitle}><i> <MdHomeWork /> </i>
+              <img src={logo} alt="" /></div>
             <div>
               <h3>{title}</h3>
               <h3>{companyName}</h3>
               <p>{position}</p>
-              <div className={styles.jobsDetails}>
-                <Link to={`/jobs/${id}`}><button>Show More</button></Link>
-              </div>
+            
+                <Link to={`/jobs/${id}`}><button className={styles.jobsDetails}>Show More</button></Link>
+  
 
             </div>
           </div>
