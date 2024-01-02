@@ -50,6 +50,8 @@ justify-content: space-between;
     display:flex;
     align-items:center;
     justify-content:space-between;
+    border-bottom:1px solid #ccc;
+    margin-bottom:.5rem;
 }
 
 .jobCard i{
@@ -101,6 +103,31 @@ justify-content: space-between;
     cursor: pointer;
     font-weight:600;
     border:none;
+}
+.ApplyNow a{
+    color:#fff;
+}
+
+.posIcon h5{
+    font-size:1rem;
+    font-weight:600;
+}
+
+.jobIcon{
+    display:flex;
+    gap:.2rem;
+    align-items:center;
+}
+
+.jobIcon i{
+    font-size:1.5rem;
+    cursor: pointer;
+}
+
+.posIcon{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 

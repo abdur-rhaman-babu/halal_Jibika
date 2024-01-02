@@ -14,10 +14,11 @@ import { BsFillEyeSlashFill } from "react-icons/bs";
 import { BsBack } from "react-icons/bs";
 import { MdHomeWork } from "react-icons/md";
 const Signup = () => {
+
   const [ createUserWithEmailAndPassword,user,loading,error] =useCreateUserWithEmailAndPassword(auth) 
   const navigate = useNavigate()
-  const [showPassword,setShowPassword] = useState(false)
 
+  const [showPassword,setShowPassword] = useState(false)
   const [signup,setSignUp] = useState({
     firstname:'',
     surename:'',
@@ -145,3 +146,7 @@ const Signup = () => {
 };
 
 export default Signup;
+
+
+
+

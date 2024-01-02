@@ -17,7 +17,7 @@ const [user] = useAuthState(auth)
 console.log(user);
 const logout =()=>{
     signOut(auth)
-  }
+}
 
 const navBarhandler =()=>{
     setIsChecked(!isChecked) 
@@ -38,7 +38,7 @@ const navBarhandler =()=>{
             <div className={`${styles.mainMenu} ${isChecked?styles.mainMenuResponsive:''}`}>
             <NavLink to='/about'> About </NavLink>
             <NavLink to='/contact'> Contact </NavLink>
-            <NavLink to='/jobs'> Jobs</NavLink>
+            <NavLink to='/jobs'> Jobs </NavLink>
             <NavLink to='/favourite'> Favourite </NavLink>
             {user? <Link className={styles.SignOut} onClick={logout}>Sign Out</Link> : <NavLink to='/login'>
             {isChecked? <p className={styles.Login}>Login</p> :<IoMdContact className={styles.loginIcon} />}</NavLink>}

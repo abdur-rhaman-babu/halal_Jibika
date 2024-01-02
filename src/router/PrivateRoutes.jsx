@@ -6,8 +6,10 @@ import { Navigate, useLocation } from "react-router-dom";
 
 
 const PrivateRoutes = ({children}) => {
+
     const [user,loading] = useAuthState(auth)
-    const [location] = useLocation()
+    const location = useLocation()
+
     if(loading){
         return <Loading/>
     }

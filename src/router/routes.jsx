@@ -10,6 +10,9 @@ import ErrorPage from "../Components/ErrorPage/ErrorPage";
 import Jobs from "../pages/Jobs/Jobs";
 import JobDetails from "../pages/Jobs/JobDetails";
 import Favourites from "../pages/Favourite/Favourites";
+import PrivateRoutes from "./PrivateRoutes";
+import Applies from "../pages/Application/Applies";
+import Apply from "../pages/Application/Apply";
 
 
 const routes = createBrowserRouter(
@@ -38,12 +41,21 @@ const routes = createBrowserRouter(
                 },
                 {
                     path:"/jobs/:jobid",
-                    element:<JobDetails/>,
-                    loader:({params})=>fetch(`http://localhost:9000/jobs/${params.jobid}`)
+                    element:<PrivateRoutes><JobDetails/></PrivateRoutes>,
+                    loader:({params})=>fetch(`http://localhost:9000/jobs/${params.jobid}`),
+                    errorElement:<ErrorPage/>
                 },
                 {
                     path:'/favourite',
                     element:<Favourites/>
+                },
+                {
+                    path:'/applies',
+                    element:<Applies/>
+                },
+                {
+                    path:'/apply',
+                    element:<Apply/>
                 },
             ]
         },

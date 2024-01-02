@@ -10,7 +10,6 @@ const Jobs = () => {
             {
                 jobs && jobs.map((job)=><Job key={job.id} job={job}/>)
             }
-
         </div>
        </div>
 

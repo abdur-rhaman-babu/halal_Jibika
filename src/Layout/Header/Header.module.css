@@ -88,8 +88,10 @@ align-items: center;
     font-family: 'Poppins', sans-serif;
 }
 
-
-.mainMenu a::after {
+.navMenu a.active{
+    color:red;
+}
+ .mainMenu a::after {
     content: '';
     display: block;
     position: absolute;
@@ -101,10 +103,10 @@ align-items: center;
   }
 
   /* Expand the underline on hover */ 
-.mainMenu a:hover::after{
+ .mainMenu a:hover::after{
     width: 100%;
     left: 0;
-}
+} 
 
 
 .loginIcon{
@@ -149,6 +151,7 @@ align-items: center;
  .SignOut:hover::after {
     display: none;
  }
+
 
   @media (max-width: 992px) {
 
@@ -246,6 +249,10 @@ align-items: center;
     .searchBar{
         width:58%;
     }
+}
+
+.mainMenu a.active{
+    color:red;
 }
 
 

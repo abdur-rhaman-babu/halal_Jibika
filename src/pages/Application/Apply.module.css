@@ -1,0 +1,84 @@
+.formContainer{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:1rem;
+}
+
+.formTitle h1{
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:.5rem;
+}
+
+.mainForm{
+    padding:1rem;
+    border-radius:.5rem;
+    width:500px;
+}
+
+.mainForm legend{
+   font-size:1.3rem;
+   font-weight:600;
+}
+
+.mainForm input,select,textarea{
+    width:100%;
+    padding:.2rem .5rem;
+    border-radius:.3rem;
+    outline:none;
+    font-size:1.5rem;
+}
+
+.mainForm label{
+    font-size:1.4rem;
+}
+
+.mainForm button{
+    border:none;
+    background-color:#003d60;
+    color:#fff;
+    font-size:1.5rem;
+    padding:.5rem 0;
+    cursor: pointer;
+}
+
+.apply_btn{
+    width:100%;
+}
+
+
+/* -----------------------------------------------form details-------------------------------------------------- */
+.formDetails{
+    /* background-color:red; */
+    padding:1rem;
+    border-radius:.3rem;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    border:.1rem solid #003d60;
+    margin-bottom:.7rem;
+}
+
+.formDetails span{
+    font-size:1.2rem;
+    color:#003d60;
+}
+.formDetails h3{
+   border: .2px solid #003d60;
+   color:#003d60;
+   padding:.3rem .5rem;
+   border-radius:.3rem;
+   font-size:1.2rem;
+}
+.formDetails h1{
+   text-align:center;
+}
+
+.flex{
+    display:flex;
+    gap:.5rem;
+}
+
+
+

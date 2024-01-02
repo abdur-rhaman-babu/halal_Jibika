@@ -16,71 +16,73 @@
 
 
     const Login = () => {
-    const [signInWithEmailAndPassword, user, loading, error] =useSignInWithEmailAndPassword(auth);
-    const navigate = useNavigate()
-    const location = useLocation()
-
-    // all Input
-    const [login,setLogin] = useState({
-    email:'',
-    password:''
-    })
-
-
-    // Show password 
-    const [showPassword,setShowPassword] = useState(false)
-    const setShowPasswordHandler = ()=>{
-    setShowPassword(!showPassword)
-    }
-
-    // onChangeHandler
-    const onChangehandle=(e)=>{
-    setLogin({
-    ...login,
-    [e.target.name]:e.target.value
-    })
-    }
-
-    
-    // Loading Element
-    if(loading){
-      return <Loading></Loading>
-    }
-
-    // errorElement
-    let errorElement;
-    if(error){
-    errorElement= <p>{error?.message}</p>
-    return toast.error('invalid account')
-    }
-
-    // set Navigate
-    let from = location.state?.from?.pathname || "/";
-    if(user){
-    console.log(user);
-    navigate(from, { replace: true });
-    toast.success(`Log In Successfully Done`, {
-    toastId: "success1"})}
-    
-    // Go Home
-    const handleGoHome = () => { navigate("/")};
-    // Go Back
-    const handleGoBack= () => {navigate(-1)};
-
-    // Form handler
-    const loginFormHandler = (e)=>{
-    e.preventDefault()
-    signInWithEmailAndPassword(login.email, login.password)
-    .then(()=>{ emptyInput()})
-    .catch((error)=>{toast.error(error.message)})}
-
-    // Empty Imput
-    const emptyInput =()=>{
-    setLogin({
-    email:'',
-    password:''
-    })
-    }
+      const [signInWithEmailAndPassword, user, loading, error] =useSignInWithEmailAndPassword(auth);
+      const navigate = useNavigate()
+      const location = useLocation()
+  
+      // all Input
+      const [login,setLogin] = useState({
+      email:'',
+      password:''
+      })
+  
+  
+      // Show password 
+      const [showPassword,setShowPassword] = useState(false)
+      const setShowPasswordHandler = ()=>{
+      setShowPassword(!showPassword)
+      }
+  
+      // onChangeHandler
+      const onChangehandle=(e)=>{
+      setLogin({
+      ...login,
+      [e.target.name]:e.target.value
+      })
+      }
+  
+      
+      // Loading Element
+      if(loading){
+        return <Loading></Loading>
+      }
+  
+      // errorElement
+      let errorElement;
+      if(error){
+      errorElement= <p>{error?.message}</p>
+      return toast.error('invalid account')
+      }
+  
+      // set Navigate
+      let from = location.state?.from?.pathname || "/";
+      if(user){
+      console.log(user);
+      navigate(from, { replace: true });
+      toast.success(`Log In Successfully Done`, {
+      toastId: "success1"})}
+      
+      
+      // Go Home
+      const handleGoHome = () => { navigate("/")};
+      // Go Back
+      const handleGoBack= () => {navigate(-1)};
+  
+      // Form handler
+      const loginFormHandler = (e)=>{
+      e.preventDefault()
+      signInWithEmailAndPassword(login.email, login.password)
+      .then(()=>{ emptyInput()})
+      .catch((error)=>{toast.error(error.message)})}
+  
+      // Empty Imput
+      const emptyInput =()=>{
+      setLogin({
+      email:'',
+      password:''
+      })
+      }
+  
 
     return (
           <div className={styles.Logincontainer}>

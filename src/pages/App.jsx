@@ -1,5 +1,5 @@
 
-import "./App.css"
+import "../../src/App.css"
 import Mainlayout from "../Layout/MainLayout/Mainlayout";
 const App = () => {
   return (

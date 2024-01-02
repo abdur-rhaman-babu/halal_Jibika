@@ -1,4 +1,5 @@
-import { useLoaderData } from "react-router-dom";
+/* eslint-disable react/prop-types */
+import { NavLink, useLoaderData } from "react-router-dom";
 import { MdLocationPin } from "react-icons/md";
 import { HiAcademicCap } from "react-icons/hi2";
 import { MdWorkHistory } from "react-icons/md";
@@ -6,6 +7,7 @@ import { MdOutlineDateRange } from "react-icons/md";
 import { useState } from "react";
 import styles from "./Job.module.css"
 const JobDetails = () => {
+  
     const [showDetails,setShowDetails] = useState(false);
     const {
         title,
@@ -75,7 +77,7 @@ const JobDetails = () => {
                 <li key={index}>{step}</li>
               ))}
             </ol>
-            <button className={styles.ApplyNow}>Apply Now</button>
+            <button className={styles.ApplyNow}><NavLink to='/applies' > Apply Now </NavLink></button>
           </div></div>
            }
           </div>
