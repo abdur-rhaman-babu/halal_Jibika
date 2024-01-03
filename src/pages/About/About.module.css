@@ -1,0 +1,29 @@
+.header img{
+    height:500px;
+    width:100%;
+}
+
+.aboutContent{
+    margin-bottom:.8rem;
+}
+.header{
+    max-width:100%;
+    margin:0 auto;
+}
+
+.aboutOur{
+    text-align:center;
+    margin-top:1rem;
+}
+.aboutOur button{
+    padding:.5rem .8rem;
+    border: none;
+    color:#fff;
+    font-size:1.25rem;
+    background-color:#003d60;
+    margin-top:1.2rem;
+    cursor: pointer;
+    border-radius:.3rem;
+}
+
+

@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 .container {
   display: flex;
   align-items: center;
@@ -10,86 +6,7 @@
   height:100vh;
 }
 
-.mainDiv h2{
-    font-size:4rem;
-    color:red;
-}
 
-.mainDiv h1{
-    font-size:9rem;
-    color:red;
-}
-
-.cercleOne {
-  width: 80px;
-  height: 80px;
-  background-color: red;
-  border-radius: 50%;
-  animation-name: notfound;
-  animation-duration: 7s;
-  animation-iteration-count: infinite;
-  position:relative;
-}
-
-.cercleTwo {
-  width: 80px;
-  height: 80px;
-  background-color: red;
-  border-radius: 50%;
-  animation-name: notfound1;
-  animation-duration: 6s;
-  animation-iteration-count: infinite;
-  position:relative;
-}
-.cercleThree {
-  width: 80px;
-  height: 80px;
-  background-color: red;
-  border-radius: 50%;
-  animation-name: notfound2;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  position:relative;
-}
-.cercleFour {
-  width: 80px;
-  height: 80px;
-  background-color: red;
-  border-radius: 50%;
-  animation-name: notfound3;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  position:relative;
-}
-
-@keyframes notfound {
-    0%   {background-color:red; left:-200px; top:-200px;bottom:100px;}
-    25%  {background-color:yellow; left:200px; top:-200px;bottom:100px;}
-    50%  {background-color:blue; left:200px; top:200px;bottom:100px;}
-    75%  {background-color:green; left:-200px; top:200px;bottom:100px;}
-    100% {background-color:red; left:-200px; top:-200px;bottom:100px;} 
-}
-@keyframes notfound1 {
-    0%   {background-color:red; left:-200px; top:-200px;bottom:100px;}
-    25%  {background-color:yellow; left:200px; top:-200px;bottom:100px;}
-    50%  {background-color:blue; left:200px; top:200px;bottom:100px;}
-    75%  {background-color:green; left:-200px; top:200px;bottom:100px;}
-    100% {background-color:red; left:-200px; top:-200px; bottom:100px;} 
-}
-@keyframes notfound2 {
-    0%   {background-color:red; left:-200px; top:-200px;bottom:100px;}
-    25%  {background-color:yellow; left:200px; top:-200px;bottom:100px;}
-    50%  {background-color:blue; left:200px; top:200px;bottom:100px;}
-    75%  {background-color:green; left:-200px; top:200px;bottom:100px;}
-    100% {background-color:red; left:-200px; top:-200px;bottom:100px;} 
-}
-@keyframes notfound3 {
-    0%   {background-color:red; left:-200px; top:-200px;bottom:100px;}
-    25%  {background-color:yellow; left:200px; top:-200px;bottom:100px;}
-    50%  {background-color:blue; left:200px; top:200px;bottom:100px;}
-    75%  {background-color:green; left:-200px; top:200px;bottom:100px;}
-    100% {background-color:red; left:-200px; top:-200px;bottom:100px;} 
-}
 
 
 
