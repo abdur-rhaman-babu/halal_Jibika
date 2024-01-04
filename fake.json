@@ -1,0 +1,281 @@
+
+{
+    "jobs": [
+      {
+        "id": 1,
+        "title": "Google Internship Program",
+        "logo": "http://surl.li/othjs",
+        "companyName": "Google",
+        "position": "Intern Developer",
+        "location": "Dhaka",
+        "experience": "about 2 years",
+        "deadline": "24-01-2024",
+        "educationQualification": "CSE",
+        "description": "This is an internship opportunity from Google.",
+        "applicationRequirements": {
+          "eligibility": "Open to students and recent graduates",
+          "skills": [
+            "Programming skills in one or more languages",
+            "Strong problem-solving abilities",
+            "Excellent communication skills"
+          ],
+          "documents": [
+            "Resume",
+            "Cover letter",
+            "Transcripts"
+          ]
+        },
+        "applicationProcess": {
+          "steps": [
+            "Visit the Google Careers website",
+            "Find the 'Internship Program' position",
+            "Submit your application online"
+          ],
+          "message": "Ready to apply for an internship or a full-time job at Google? Here’s what you’ll need:"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Facebook Junior Development Program",
+        "logo": "http://surl.li/othkq",
+        "companyName": "Facebook",
+        "position": "Junior Developer",
+        "location": "Any where in USA",
+        "experience": "NA",
+        "deadline": "11-02-2024",
+        "educationQualification": "NON-CSE",
+        "description": "This is a junior developer recruitment from Facebook",
+        "applicationRequirements": {
+          "eligibility": "Open to students and recent graduates",
+          "skills": [
+            "Programming skills in one or more languages",
+            "Strong problem-solving abilities",
+            "Excellent communication skills"
+          ],
+          "documents": [
+            "Resume",
+            "Cover letter",
+            "Transcripts"
+          ]
+        },
+        "applicationProcess": {
+          "steps": [
+            "Visit the Facebook Careers website",
+            "Find the 'Juniour Developer' position",
+            "Submit your application online"
+          ],
+          "message": "Ready to apply for an internship or a full-time job at Google? Here’s what you’ll need:"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Microsoft Senior Development Program",
+        "logo": "http://surl.li/othlb",
+        "companyName": "Microsoft",
+        "position": "Senior Developer",
+        "location": "Any where in USA",
+        "experience": "NA",
+        "deadline": "16-02-2024",
+        "educationQualification": "NON-CSE",
+        "description": "This is a junior developer recruitment from Microsoft",
+        "applicationRequirements": {
+          "eligibility": "Open to students and recent graduates",
+          "skills": [
+            "Programming skills in one or more languages",
+            "Strong problem-solving abilities",
+            "Excellent communication skills"
+          ],
+          "documents": [
+            "Resume",
+            "Cover letter",
+            "Transcripts"
+          ]
+        },
+        "applicationProcess": {
+          "steps": [
+            "Visit the Facebook Careers website",
+            "Find the 'Juniour Developer' position",
+            "Submit your application online"
+          ],
+          "message": "Ready to apply for an internship or a full-time job at Google? Here’s what you’ll need:"
+        }
+      },
+      {
+        "id": 5,
+        "title": "Apple UX Designer",
+        "logo": "http://surl.li/othqs",
+        "companyName": "Apple",
+        "position": "UX Designer",
+        "location": "Cupertino, CA",
+        "experience": "2-4 years",
+        "deadline": "15-03-2024",
+        "educationQualification": "Design or related field",
+        "description": "Join Apple's design team as a UX Designer.",
+        "applicationRequirements": {
+          "eligibility": "Open to experienced designers",
+          "skills": [
+            "Proficiency in UI/UX design tools",
+            "Experience with user research",
+            "Strong communication and collaboration skills"
+          ],
+          "documents": [
+            "Resume",
+            "Portfolio",
+            "Design samples"
+          ]
+        },
+        "applicationProcess": {
+          "steps": [
+            "Visit the Apple Careers website",
+            "Find the 'UX Designer' position",
+            "Submit your application online"
+          ],
+          "message": "Ready to shape the future of design at Apple? Here’s what you’ll need:"
+        }
+      },
+      {
+        "id": 6,
+        "title": "Tesla Hardware Engineer",
+        "logo": "http://surl.li/othmb",
+        "companyName": "Tesla",
+        "position": "Hardware Engineer",
+        "location": "Palo Alto, CA",
+        "experience": "3-5 years",
+        "deadline": "18-03-2024",
+        "educationQualification": "Electrical Engineering",
+        "description": "Innovate with Tesla as a Hardware Engineer.",
+        "applicationRequirements": {
+          "eligibility": "Open to experienced engineers",
+          "skills": [
+            "Experience with hardware design",
+            "Knowledge of electronics and circuit design",
+            "Strong problem-solving skills"
+          ],
+          "documents": [
+            "Resume",
+            "Cover letter",
+            "Engineering certifications"
+          ]
+        },
+        "applicationProcess": {
+          "steps": [
+            "Visit the Tesla Careers website",
+            "Find the 'Hardware Engineer' position",
+            "Submit your application online"
+          ],
+          "message": "Ready to revolutionize the automotive industry with Tesla? Here’s what you’ll need:"
+        }
+      },
+      {
+        "id": 7,
+        "title": "Netflix Data Scientist",
+        "logo": "http://surl.li/othri",
+        "companyName": "Netflix",
+        "position": "Data Scientist",
+        "location": "Los Gatos, CA",
+        "experience": "4-6 years",
+        "deadline": "24-03-2024",
+        "educationQualification": "Statistics or related field",
+        "description": "Exciting opportunity for a Data Scientist at Netflix.",
+        "applicationRequirements": {
+          "eligibility": "Open to experienced data scientists",
+          "skills": [
+            "Statistical modeling and analysis",
+            "Experience with machine learning algorithms",
+            "Data visualization skills"
+          ],
+          "documents": [
+            "Resume",
+            "Data science portfolio",
+            "Educational transcripts"
+          ]
+        },
+        "applicationProcess": {
+          "steps": [
+            "Visit the Netflix Careers website",
+            "Find the 'Data Scientist' position",
+            "Submit your application online"
+          ],
+          "message": "Ready to shape the future of entertainment data at Netflix? Here’s what you’ll need:"
+        }
+      },
+      {
+        "id": 8,
+        "title": "Adobe Software Engineer",
+        "logo": "http://surl.li/othmv",
+        "companyName": "Adobe",
+        "position": "Software Engineer",
+        "location": "San Jose, CA",
+        "experience": "3-5 years",
+        "deadline": "28-03-2024",
+        "educationQualification": "Computer Science",
+        "description": "Join Adobe as a Software Engineer and be part of creative innovation.",
+        "applicationRequirements": {
+          "eligibility": "Open to experienced software engineers",
+          "skills": [
+            "Proficiency in C++ and Java",
+            "Experience with web development",
+            "Strong problem-solving skills"
+          ],
+          "documents": [
+            "Resume",
+            "Code samples",
+            "Professional references"
+          ]
+        },
+        "applicationProcess": {
+          "steps": [
+            "Visit the Adobe Careers website",
+            "Find the 'Software Engineer' position",
+            "Submit your application online"
+          ],
+          "message": "Ready to contribute to the world of digital creativity at Adobe? Here’s what you’ll need:"
+        }
+      },
+      {
+        "id": 9,
+        "title": "SpaceX Aerospace Engineer",
+        "logo": "http://surl.li/othru",
+        "companyName": "SpaceX",
+        "position": "Aerospace Engineer",
+        "location": "Hawthorne, CA",
+        "experience": "5-8 years",
+        "deadline": "15-04-2024",
+        "educationQualification": "Aerospace Engineering",
+        "description": "Join SpaceX and be part of the future of space exploration.",
+        "applicationRequirements": {
+          "eligibility": "Open to experienced aerospace engineers",
+          "skills": [
+            "Experience with spacecraft design",
+            "Knowledge of propulsion systems",
+            "Strong analytical skills"
+          ],
+          "documents": [
+            "Resume",
+            "Portfolio of aerospace projects",
+            "Engineering certifications"
+          ]
+        },
+        "applicationProcess": {
+          "steps": [
+            "Visit the SpaceX Careers website",
+            "Find the 'Aerospace Engineer' position",
+            "Submit your application online"
+          ],
+          "message": "Ready to reach for the stars with SpaceX? Here’s what you’ll need:"
+        }
+      },
+      {
+        "title": "Bangladesh",
+        "logo": "http://surl.li/ovxei",
+        "companyName": "amazon",
+        "position": "ceo",
+        "location": "usa",
+        "experience": "3-4 years",
+        "deadLine": "2024-01-23",
+        "educationQualification": "cse",
+        "description": "kddddfsjdfsfsfjslkfjlskflsdfslkfjlsfjsldfjsdjflsdjflsdflsdfsflsdflsdf",
+        "id": 10
+      }
+    ]
+  }

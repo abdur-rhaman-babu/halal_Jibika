@@ -1,5 +1,4 @@
 import { Link, NavLink } from "react-router-dom";
-import styles from "./Header.module.css";
 import { TbSearch } from "react-icons/tb";
 import { IoMdContact } from "react-icons/io";
 import { FaBars } from "react-icons/fa";
@@ -9,6 +8,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { signOut } from "firebase/auth";
 import auth from "../../firebase/firebase.init";
 import { MdHomeWork } from "react-icons/md";
+import styles from "./Header.module.css";
 
 const Header = () => {
 const [isChecked, setIsChecked] = useState(false)
@@ -25,10 +25,10 @@ const navBarhandler =()=>{
 
     return (
             <nav className={styles.navMenu}>
-            <NavLink to='/'><div className={styles.title}>
+            <Link to='/'><div className={styles.title}>
             <MdHomeWork className={styles.logo} style={{color:'#fff'}}/>
             <h1><span>H</span>ALAL JIBIKA</h1> 
-            </div> </NavLink>
+            </div> </Link>
 
             <div className={styles.searchBar}>
             <input type="text" placeholder="search here" />

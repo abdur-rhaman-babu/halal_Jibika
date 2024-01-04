@@ -18,14 +18,16 @@ const Signup = () => {
   const [ createUserWithEmailAndPassword,user,loading,error] =useCreateUserWithEmailAndPassword(auth) 
   const navigate = useNavigate()
 
-  const [showPassword,setShowPassword] = useState(false)
-  const [signup,setSignUp] = useState({
+  const initialSignUpData = {
     firstname:'',
     surename:'',
     email:'',
     newpassword:'',
     confirmpassword:''
-  })
+  }
+
+  const [showPassword,setShowPassword] = useState(false)
+  const [signup,setSignUp] = useState(initialSignUpData)
 
   // setShowPassword
   const setShowPasswordHandler = ()=>{
@@ -43,28 +45,31 @@ const Signup = () => {
  // form handler
   const signUpHandler =(e)=>{
       e.preventDefault()
-    
-    if(signup.newpassword !== signup.confirmpassword){
-     return toast.error('worng password')
-    }else{
-      createUserWithEmailAndPassword(signup.email, signup.newpassword)
-      .then(()=>{
-       emptyInput()
+
+  // Password validation
+  const passwordRegex = /^(?=.*[A-Z])(?=.*[@])[A-Za-z\d@$!%*?&]{8,}$/;
+
+  if (!passwordRegex.test(signup.newpassword)) {
+    return toast.error(
+      'Password must contain at least one uppercase letter and one special character (@)'
+    );
+  }
+
+  if (signup.newpassword !== signup.confirmpassword) {
+    return toast.error('Passwords do not match');
+  } else {
+    createUserWithEmailAndPassword(signup.email, signup.newpassword)
+      .then(() => {
+        emptyInput();
       })
-      .catch((error)=>{
-      toast.error(error.message)
-      })
-    }
+      .catch((error) => {
+        toast.error(error.message);
+      });
+  }
    };
   
    const emptyInput = ()=>{
-    setSignUp({
-      firstname:'',
-      surename:'',
-      email:'',
-      newpassword:'',
-      confirmpassword:''
-    })
+    setSignUp(initialSignUpData)
    }
 
   //  Loading
@@ -129,7 +134,7 @@ const Signup = () => {
                  </div>
 
                  <div className={styles.signUpConfirmPass} onClick={setShowPasswordHandler}>
-                 <input type= {showPassword ?"text": "password"} placeholder="confirmation password" onChange={onChangeHandle} name="confirmpassword" value={signup.confirmpassword}/>
+                 <input type= {showPassword ? "text": "password"} placeholder="confirmation password" onChange={onChangeHandle} name="confirmpassword" value={signup.confirmpassword}/>
                  {showPassword ?<BsFillEyeFill />:<BsFillEyeSlashFill /> }
                  </div>
 

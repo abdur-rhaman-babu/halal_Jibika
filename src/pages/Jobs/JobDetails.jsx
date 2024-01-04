@@ -4,11 +4,9 @@ import { MdLocationPin } from "react-icons/md";
 import { HiAcademicCap } from "react-icons/hi2";
 import { MdWorkHistory } from "react-icons/md";
 import { MdOutlineDateRange } from "react-icons/md";
-import { useState } from "react";
 import styles from "./Job.module.css"
 const JobDetails = () => {
   
-    const [showDetails,setShowDetails] = useState(false);
     const {
         title,
         companyName,
@@ -50,13 +48,8 @@ const JobDetails = () => {
               </div>
             </div>
 
-            <button className={styles.jobDescription} onClick={() => setShowDetails(!showDetails)}>
-                  {showDetails ? "Hide Details" : "Description"}
-                </button>
-
-           {
-            showDetails && <div> <div className={styles.applicationRequirements}>
-            <h4>Application Requirements:</h4>
+            <h5 className={styles.jobDescription}>Application Requirements </h5>  
+            <div> <div className={styles.applicationRequirements}>
             <p>Eligibility: {applicationRequirements.eligibility}</p>
             <ul>
               {applicationRequirements.skills.map((skill, index) => (
@@ -77,9 +70,9 @@ const JobDetails = () => {
                 <li key={index}>{step}</li>
               ))}
             </ol>
-            <button className={styles.ApplyNow}><NavLink to='/applies' > Apply Now </NavLink></button>
-          </div></div>
-           }
+            <button className={styles.ApplyNow}> <NavLink to='/applies' >Apply Now </NavLink></button>
+          </div>
+          </div>
           </div>
          </div>
     );

@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styles from "./Apply.module.css";
 import Apply from "./Apply";
-import { getDatafromLs } from "../../Components/GetDataFromLs/getDataFromLs";
+// import { getDatafromLs } from "../../Components/GetDataFromLs/getDataFromLs";
 const Applies = () => {
   const initialFormData = {
     firstname: "",
@@ -14,7 +14,8 @@ const Applies = () => {
     dateOfBirth:'',
     gender:''
   };
-  const [allFormData, setAllFormData] = useState(getDatafromLs());
+  
+  const [allFormData, setAllFormData] = useState([]);
   //   console.log(allFormData);
   const [formData, setFormData] = useState(initialFormData);
   const [showApply, setShowApply] = useState(false);
@@ -54,10 +55,10 @@ const Applies = () => {
   }
   //   console.log(allBloodGroup);
 
-//   setItems
-  useEffect(() => {
-    localStorage.setItem('allData', JSON.stringify(allFormData));
-  }, [allFormData]);
+// //   setItems
+//   useEffect(() => {
+//     localStorage.setItem('allData', JSON.stringify(formData));
+//   }, [formData]);
   
   return (
     <>

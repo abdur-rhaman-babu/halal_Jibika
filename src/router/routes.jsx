@@ -13,6 +13,7 @@ import Favourites from "../pages/Favourite/Favourites";
 import PrivateRoutes from "./PrivateRoutes";
 import Applies from "../pages/Application/Applies";
 import Apply from "../pages/Application/Apply";
+import Addjob from "../pages/AddJoB/Addjob";
 
 
 const routes = createBrowserRouter(
@@ -56,6 +57,10 @@ const routes = createBrowserRouter(
                 {
                     path:'/apply',
                     element:<Apply/>
+                },
+                {
+                    path:'/addjob',
+                    element:<Addjob/>
                 },
             ]
         },

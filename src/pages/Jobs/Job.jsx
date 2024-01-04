@@ -38,7 +38,7 @@ const Job = ({ job }) => {
                   <i><IoMdHeartEmpty /></i>
                 </div>
               </div>
-              <Link to={`/jobs/${id}`}><button className={styles.jobsDetails}>Show More</button></Link>
+              <Link to={`/jobs/${id}`}><button className={styles.jobsDetails}>Continue for Application</button></Link>
             </div>
           </div>
         </div>
