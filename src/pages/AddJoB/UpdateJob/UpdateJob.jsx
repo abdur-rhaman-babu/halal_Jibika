@@ -2,6 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import styles from "../Addjob.module.css";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 const UpdateJob = () => {
     const goHomePage = useNavigate()
     const initialUpdate = {
@@ -42,6 +43,20 @@ const UpdateJob = () => {
     
       const updateJobHandler = async (e) => {
         e.preventDefault();
+
+        Swal.fire({
+          title: "Do you want to save the changes?",
+          showDenyButton: true,
+          showCancelButton: true,
+          confirmButtonText: "Save",
+          denyButtonText: `Don't save`
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire("Saved!", "", "success");
+          } else if (result.isDenied) {
+            Swal.fire("Changes are not saved", "", "info");
+          }
+        });
     
         axios.put(`http://localhost:9000/jobs/${update.id}`, {
             title: update.title,

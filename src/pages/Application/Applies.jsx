@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./Apply.module.css";
 import Apply from "./Apply";
+import Swal from "sweetalert2";
 // import { getDatafromLs } from "../../Components/GetDataFromLs/getDataFromLs";
 const Applies = () => {
   const initialFormData = {
@@ -28,7 +29,16 @@ const Applies = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(formData);
+
+    if (!formData.firstname || !formData.lastname || !formData.nid || !formData.bloodgroup || !formData.address|| !formData.phone|| !formData.dateOfBirth|| !formData.gender|| !formData.email) {
+      Swal.fire({
+          icon: "error",
+          title: "Please fill in all required fields",
+          showConfirmButton: true,
+      });
+      return;
+  }
+
 
     setShowApply(!showApply);
     setAllFormData([...allFormData, formData]);
@@ -53,13 +63,7 @@ const Applies = () => {
   for (let i = 0; i < gender.length; i++) {
     allGender.push(gender[i]);
   }
-  //   console.log(allBloodGroup);
 
-// //   setItems
-//   useEffect(() => {
-//     localStorage.setItem('allData', JSON.stringify(formData));
-//   }, [formData]);
-  
   return (
     <>
       <section>
@@ -89,7 +93,7 @@ const Applies = () => {
                       name="lastname"
                       value={formData.lastname}
                       onChange={handleChange}
-                      required
+                      
                     />
                   </div>
                   <label htmlFor="email">Email:</label>
@@ -99,7 +103,7 @@ const Applies = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    required
+                  
                   />
                   <br />
                   <label htmlFor="nid">National ID:</label>
@@ -109,7 +113,7 @@ const Applies = () => {
                     name="nid"
                     value={formData.nid}
                     onChange={handleChange}
-                    required
+                   
                   />
                   <br /> <br />
                   <label htmlFor="address">Address:</label> <br />
@@ -118,7 +122,7 @@ const Applies = () => {
                     name="address"
                     value={formData.address}
                     onChange={handleChange}
-                    required
+                    
                   ></textarea>
                   <br />
                   <label htmlFor="bloodgroup">Blood Group:</label>
@@ -127,7 +131,7 @@ const Applies = () => {
                     name="bloodgroup"
                     value={formData.bloodgroup}
                     onChange={handleChange}
-                    required
+                   
                   >
                     {allBloodGroup.map((bloodGroup) => {
                       return (
@@ -145,7 +149,7 @@ const Applies = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    required
+                  
                   />
                   <br />
                   <label htmlFor="dateOfBirth">Date of Birth:</label>
@@ -155,7 +159,7 @@ const Applies = () => {
                     name="dateOfBirth"
                     value={formData.dateOfBirth}
                     onChange={handleChange}
-                    required
+                   
                   />
                   <br />
                   <label htmlFor="gender">Gender:</label>
@@ -164,7 +168,7 @@ const Applies = () => {
                     name="gender"
                     value={formData.gender}
                     onChange={handleChange}
-                    required
+                   
                   >
                     {allGender.map((gender) => {
                       return (

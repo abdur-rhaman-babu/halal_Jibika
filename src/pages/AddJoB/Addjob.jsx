@@ -3,6 +3,7 @@ import styles from "./Addjob.module.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import swal from "sweetalert";
+import Swal from "sweetalert2";
 
 const Addjob = () => {
     const initialJobData = {
@@ -29,6 +30,15 @@ const jobOnChangeHandler = (e)=>{
     // alljobhandler
     const allJobHandler = (e)=>{
         e.preventDefault()
+
+        if (!allJob.title || !allJob.companyName || !allJob.position || !allJob.location || !allJob.experience || !allJob.deadLine || !allJob.logo|| !allJob.educationQualification|| !allJob.description) {
+          Swal.fire({
+              icon: "error",
+              title: "Please fill in all required fields",
+              showConfirmButton: true,
+          });
+          return;
+      }
         axios.post('http://localhost:9000/jobs', {
           title: allJob.title,
           logo: allJob.logo,
@@ -77,7 +87,7 @@ const jobOnChangeHandler = (e)=>{
           </div>
           <div>
             <label>Title:</label><br />
-            <input type="text" name="title" value={allJob.title} onChange={jobOnChangeHandler} />
+            <input type="text" name="title"  value={allJob.title} onChange={jobOnChangeHandler} />
           </div>
           <div>
             <label>Company Name:</label><br />
