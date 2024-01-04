@@ -6,7 +6,7 @@ import styles from "./Mainlayout.module.css";
 const Mainlayout = () => {
 
     const navigation = useNavigation()
-    console.log(navigation);
+    // console.log(navigation);
     return (
         <div>
             <Header/>

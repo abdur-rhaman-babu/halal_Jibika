@@ -1,13 +1,13 @@
 import HomeImg from "./HomeImg/bannerJob.png";
 import styles from "./Home.module.css";
 import { Link, NavLink} from "react-router-dom";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import { MdHomeWork } from "react-icons/md";
 import { MdDelete } from "react-icons/md";
 import { FaEdit } from "react-icons/fa";
 import { IoMdHeartEmpty } from "react-icons/io";
-// import swal from "sweetalert";
+import Swal from "sweetalert2";
 const Home = () => {
   const [newJobs, setNewJobs] = useState();
   // console.log(newJobs);
@@ -23,15 +23,49 @@ const Home = () => {
 
 // deleteJobHandler
 const deleteJobHandler = (id) => {
-        axios
-          .delete(`http://localhost:9000/jobs/${id}`)
-          .then(() => {
-            jsonFakeSarver();
-          })
-          .catch((error) => {
-            console.error("Error deleting user:", error);
-          });
-      }
+  Swal.fire({
+    title: "Are you sure?",
+    text: "You won't be able to revert this!",
+    icon: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!"
+  })
+        .then((result) => {
+          if (result.isConfirmed) {
+            axios.delete(`http://localhost:9000/jobs/${id}`)
+              .then(() => {
+                Swal.fire({
+                  title: "Deleted!",
+                  text: "Your file has been deleted.",
+                  icon: "success"
+                });
+                jsonFakeSarver(); 
+              })
+              .catch((error) => {
+                console.error("Error deleting user:", error);
+              });
+             }
+            })
+        .catch((error) => {
+          console.error("Error displaying confirmation:", error);
+        });
+   }
+
+   //setDateToLocalStroage
+   const setDateToLocalStroage = (id,logo,title,companyName,position,location,experience,deadLine,educationQualification,description)=>{
+    localStorage.setItem('id',id)
+    localStorage.setItem('logo',logo)
+    localStorage.setItem('title',title)
+    localStorage.setItem('companyName',companyName)
+    localStorage.setItem('position',position)
+    localStorage.setItem('location',location)
+    localStorage.setItem('experience',experience)
+    localStorage.setItem('deadLine',deadLine)
+    localStorage.setItem('educationQualification',educationQualification)
+    localStorage.setItem('description',description)
+  }
 
   useEffect(() => {
     jsonFakeSarver();
@@ -44,9 +78,10 @@ const deleteJobHandler = (id) => {
           <h3>Halal Job Network</h3>
           <h1>Find Your Prefered Job</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation.
+          In Islamic teachings, the concept of halal income refers to earnings acquired through
+           lawful and ethical means, aligning with Sharia principles. Muslims are encouraged to engage 
+           in professions and business ventures that adhere to ethical standards, avoiding industries such 
+           as gambling, usury, and those involving harmful substances. 
           </p>
           <div className={styles.explorNew}>
           <NavLink to="/login">
@@ -62,9 +97,9 @@ const deleteJobHandler = (id) => {
       {newJobs &&
         newJobs.map((newJob) => {
           return (
-            <>
-                    <div className={styles.newJobContainer}>
-                      <div key={newJob.id} className={styles.newJobCard}>
+            <Fragment key={newJob.id}>
+                    <div  className={styles.newJobContainer}>
+                      <div className={styles.newJobCard}>
                       <div className={styles.newjobTitle}>
                         <i><MdHomeWork /></i>
                         <img src={newJob.logo} alt="" className="" />
@@ -77,9 +112,20 @@ const deleteJobHandler = (id) => {
                             <h4>{newJob.position}</h4>
                           </div>
                           <div className={styles.jobIcon}>
-                          {/* <i><MdDelete /></i> */}
                           <i className="btn-danger" onClick={()=>deleteJobHandler(newJob.id)}> <MdDelete /></i>
-                          <i><FaEdit /> </i>
+                          <Link to = "/updatejob"><i onClick={()=>setDateToLocalStroage(
+                            newJob.id,
+                            newJob.logo,
+                            newJob.title,
+                            newJob.companyName,
+                            newJob.position,
+                            newJob.location,
+                            newJob.experience,
+                            newJob.deadLine,
+                            newJob.educationQualification,
+                            newJob.description,
+                            )}><FaEdit /> </i></Link>
+                          
                           <i><IoMdHeartEmpty /></i>
                           </div>
                         </div>
@@ -90,7 +136,7 @@ const deleteJobHandler = (id) => {
                       </div>
                     </div>
                   </div> 
-                </>
+               </Fragment>
           );
         })}
     </section> 

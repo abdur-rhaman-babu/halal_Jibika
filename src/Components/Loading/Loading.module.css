@@ -1,12 +1,11 @@
-.loadingContent{
+/* .loadingContent{
     display:flex;
     align-items:center;
     justify-content:center;
     height:100vh;
-}
+} */
 
 .loadingSpinner{
-    /* background-color: #e74c3c; */
     border: 8px solid #f3f3f3;
     border-top: 8px solid #003d60;
     border-bottom: 8px solid #003d60;

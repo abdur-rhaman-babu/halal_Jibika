@@ -87,7 +87,7 @@ const Signup = () => {
   //  user
    let from = location.state?.from?.pathname || "/";
    if(user){
-    console.log(user);
+    // console.log(user);
    navigate(from, { replace: true }); //important!
    toast.success(`Sign up Successfully Done`, {
      toastId: "success1",

@@ -29,16 +29,6 @@ const jobOnChangeHandler = (e)=>{
     // alljobhandler
     const allJobHandler = (e)=>{
         e.preventDefault()
-    
-        // if (formData.name.trim() === "" || formData.email.trim() === "") {
-        //   swal.fire({
-        //     icon: "error",
-        //     title: "Oops...",
-        //     text: "Please fill in all fields",
-        //   });
-        //   return;
-        // }
-    
         axios.post('http://localhost:9000/jobs', {
           title: allJob.title,
           logo: allJob.logo,
@@ -68,7 +58,7 @@ const jobOnChangeHandler = (e)=>{
     
     
     setAllJob(initialJobData)
-        console.log(allJob);
+        // console.log(allJob);
     }
 
     return (
