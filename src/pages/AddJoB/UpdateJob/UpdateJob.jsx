@@ -6,15 +6,15 @@ const UpdateJob = () => {
     const goHomePage = useNavigate()
     const initialUpdate = {
       id:'',
-      logo: '',
-      title: '',
-      companyName: '',
-      position: '',
-      location: '',
-      experience: '',
-      deadLine: '',
-      educationQualification: '',
-      description: '',
+      logo:'',
+      title:'',
+      companyName:'',
+      position:'',
+      location:'',
+      experience:'',
+      deadLine:'',
+      educationQualification:'',
+      description:'',
     }
     const [update, setUpdate] = useState(initialUpdate);
     //   get data

@@ -10,7 +10,7 @@ const Jobs = () => {
         <div>
          <img src="http://surl.li/owfvo" alt="" />
         </div>
-        <div>
+        <div className={styles.jobBannerText}>
             <h1>Welcome to our 10 Minute Job Interview Presentation</h1>
         </div>
         <div>

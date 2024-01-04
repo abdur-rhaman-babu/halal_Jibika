@@ -6,11 +6,12 @@
    display: grid;
    grid-template-columns:repeat(3,1fr);
 }
-.container{
+
+/* .container{
 display:flex;
 gap:10px;
 justify-content: space-between;
-}
+} */
 
 .jobCard{
     padding:1rem;
@@ -159,6 +160,38 @@ justify-content: space-between;
     width:400px;
     height:400px;
 }
+
+@media only screen and (max-width: 992px) {
+    .jobCard{
+        width:407px;
+    }
+    .mainContent{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+     }
+     .jobBanner img{
+        width:300px;
+        height:300px;
+    }
+    .jobBanner h1{
+        width:100%;
+        text-align:center;
+        line-height:50px;
+     }
+  }
+
+@media only screen and (max-width: 768px) {
+    .jobCard{
+        width:406px;
+    }
+    .jobBanner h1{
+        width:100%;
+        text-align:left;
+     }
+     .jobBanner{
+        display:block;
+    }
+  }
 
 
 

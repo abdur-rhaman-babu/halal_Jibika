@@ -117,6 +117,9 @@
         text-align:center;
         gap:2rem;
     }
+    .newJobCard{
+        width:407px;;
+    }
 }
 
 @media (max-width:768px) {
@@ -140,6 +143,9 @@
 .banner_text button{
     padding:.5rem .8rem;
     font-size:1rem;
+}
+.newJobCard{
+    width:380px;
 }
 
 }

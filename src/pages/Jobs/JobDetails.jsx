@@ -17,6 +17,7 @@ const JobDetails = () => {
         logo,
         applicationRequirements,
         applicationProcess}= useLoaderData()
+        
     return (
         <div className={styles.DetailsContent}>
           <div className={styles.jobDetails}>

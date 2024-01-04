@@ -32,7 +32,7 @@ const Job = ({ job }) => {
         </div>
       </div>
     </div>
-    </section>
+  </section>
   
   );
 
